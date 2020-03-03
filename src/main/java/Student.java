@@ -1,6 +1,6 @@
 import io.zipcoder.interfaces.Person;
 
-public class Student implements Learner {
+public class Student extends Person implements Learner {
     public void learn(double numberOfHours) {
 
     }
