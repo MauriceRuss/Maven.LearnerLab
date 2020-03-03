@@ -16,7 +16,7 @@ public class TestPerson {
 
     @Test
     public void defaultConstructorTest(){
-        String expectedName = "Mark";
+        String expectedName = null;
         long expectedId = Long.MAX_VALUE;
         Person newPer = new Person();
         long actualId = newPer.getId();

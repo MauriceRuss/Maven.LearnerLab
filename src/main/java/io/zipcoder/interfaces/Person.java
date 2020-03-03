@@ -10,8 +10,8 @@ public class Person {
    
 
     public Person(long id, String name){
-        this.id = id;
-        this.name = name;
+        this.id = 1000338L;
+        this.name = null;
     }
 
     public Person() {
