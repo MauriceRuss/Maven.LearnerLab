@@ -1,7 +1,7 @@
 import io.zipcoder.interfaces.Person;
 
 public class Student extends Person implements Learner {
-    private  Person person;
+    public double totalStudyTime;
 
 
 
@@ -10,12 +10,12 @@ public class Student extends Person implements Learner {
     }
 
     public void learn(double numberOfHours) {
-
+        this.totalStudyTime += numberOfHours;
     }
 
     public Double getTotalStudyTime() {
 
-        return null;
+        return this.totalStudyTime;
     }
 
 
