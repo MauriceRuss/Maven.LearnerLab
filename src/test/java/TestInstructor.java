@@ -1,3 +1,4 @@
+import io.zipcoder.interfaces.Person;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,8 +9,14 @@ public class TestInstructor {
         Instructor prof = new Instructor( 11233L, 5.5);
         Assert.assertTrue(prof instanceof Teacher);
     }
+
     @Test
-    public void teach() {
+    public void testInheritance(){
+        Instructor prof = new Instructor(11233L, 5.5);
+        Assert.assertTrue(prof instanceof Person);
+    }
+    @Test
+    public void testTeach() {
     }
 
     @Test
