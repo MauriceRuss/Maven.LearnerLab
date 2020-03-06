@@ -6,27 +6,23 @@ public class TestStudent {
 
     @Test
     public void testImplementation(){
-    Student pat = new Student();
-    Double expected = 5.0;
-    Double actual =pat.getTotalStudyTime();
-    Assert.assertEquals(expected, actual);
+    Student pat = new Student( 11233L, "pat");
+    Assert.assertTrue(pat instanceof Learner);
     }
 
     @Test
     public void testInheritance(){
-    Person pat = new Student();
-    String expected = "pat";
-    String actual = pat.getName();
-    Assert.assertEquals(expected, actual);
+    Student pat = new Student(11233L, "pat");
+    Assert.assertTrue(pat instanceof Person );
 
     }
-
+    
     @Test
     public void testLearn(){
-    Student pat = new Student();
+    Student pat = new Student(21351L, "pat");
     Double expected = 5.0;
     pat.learn(5);
     Double actual = pat.getTotalStudyTime();
-    Assert.assertEquals(expected,actual);
+    Assert.assertEquals(expected, actual);
     }
 }

@@ -7,11 +7,10 @@ public class Person {
     public Person(long id) {
         this.id = id;
     }
-   
 
     public Person(long id, String name){
-        this.id = 1000338L;
-        this.name = null;
+        this.id = id;
+        this.name = name;
     }
 
     public Person() {
