@@ -17,6 +17,12 @@ public class TestInstructor {
     }
     @Test
     public void testTeach() {
+      Instructor prof = new Instructor(1345L, 5.0);
+      Student pat = new Student(1342L, "pat");
+      Double expected = 5.0;
+      prof.teach(pat,5.0);
+      double actual = prof.numberOfHoursPerLearner;
+      Assert.assertEquals(expected, actual, 0.001);
     }
 
     @Test
