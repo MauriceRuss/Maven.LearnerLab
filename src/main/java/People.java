@@ -1,11 +1,12 @@
 import io.zipcoder.interfaces.Person;
 
 import java.sql.Array;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class People implements Iterable {
-    public List<Person> personList;
+public class People<E> extends Person implements Iterable<E> {
+   private ArrayList<Person> personList;
 
     public boolean contains(Person person) {
         return personList.contains(person);
@@ -20,7 +21,7 @@ public class People implements Iterable {
         return personList.add(person);
     }
 
-   public  Person findById (long id){
+   public  Person findById (Person person, long id){
 
        return null;
    }
@@ -42,7 +43,7 @@ public class People implements Iterable {
     }
 
 
-    public Iterator iterator() {
+    public Iterator<E> iterator() {
         return null;
     }
 }
