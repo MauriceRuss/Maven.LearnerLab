@@ -6,13 +6,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestPeople {
-    @Test
-    public void remove() {
-    }
+//    @Test
+//    public void remove() {
+//    Person von = new Person();
+//    Person kevin = new Person();
+//    ArrayList personList = new ArrayList(){von, kevin};
+//    personList.add(von);
+//
+//    personList.remove(kevin);
+//    Assert.assertFalse(personList.contains(kevin));
+//    }
 
     @Test
-    public void add() {
-    Person von = new Person();
+    public void addTest() {
+
     Person kevin = new Person();
     ArrayList personList = new ArrayList() {};
     personList.add(kevin);
