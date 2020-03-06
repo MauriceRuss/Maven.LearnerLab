@@ -5,6 +5,11 @@ public class Instructor extends Person implements Teacher {
     public Instructor() {
     }
 
+    public Instructor(long id, double numberOfHoursPerLearner) {
+        super(id);
+        this.numberOfHoursPerLearner = numberOfHoursPerLearner;
+    }
+
     public void teach(Learner learner, double numberOfHours) {
 
     }
