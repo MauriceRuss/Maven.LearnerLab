@@ -39,7 +39,8 @@ public abstract class People<E> extends Person implements Iterable<E> {
     }
 
     public Integer countListSize(){
-        return null;
+       int size = personList.size();
+        return size;
     }
 
     public Array toArrayList (){

@@ -12,7 +12,7 @@ public final class Students extends People<Student> {
         return INSTANCE;
     }
 
-    
+
     public Student[] toArray() {
         Student[] students = Students.getInstance().toArray();
         return students;
