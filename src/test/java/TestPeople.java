@@ -7,7 +7,7 @@ import java.util.List;
 
 public class TestPeople {
     @Test
-    public void remove() {
+    public void removeTest() {
     Person von = new Person();
     Person kevin = new Person();
     ArrayList<Person> personList = new ArrayList(){ };
@@ -28,7 +28,16 @@ public class TestPeople {
     }
 
     @Test
-    public void findById() {
+    public void findByIdTest() {
+    People list = new People();
+    Person sven = new Person();;
+    sven.setId(123);
+    list.add(sven);
+    String expected = "sven";
+    Person personId = list.findById(123);
+    String actual = personId.getName();
+    Assert.assertEquals(expected, actual);
+
     }
 
 }

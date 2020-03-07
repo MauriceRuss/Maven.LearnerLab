@@ -5,8 +5,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class People<E extends Person> implements Iterable<E> {
-   private ArrayList<Person> personList;
+public class People<E> extends Person implements Iterable<E> {
+   private List<Person> personList;
+
+   public People (){
+       personList= new ArrayList<Person>();
+   }
 
     public boolean contains(Person person) {
         return personList.contains(person);
@@ -21,7 +25,7 @@ public class People<E extends Person> implements Iterable<E> {
         return personList.add(person);
     }
 
-   public  Person findById (Person person, long id){
+   public  Person findById ( long id){
 
        return null;
    }
