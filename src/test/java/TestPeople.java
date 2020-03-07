@@ -6,16 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestPeople {
-//    @Test
-//    public void remove() {
-//    Person von = new Person();
-//    Person kevin = new Person();
-//    ArrayList personList = new ArrayList(){von, kevin};
-//    personList.add(von);
-//
-//    personList.remove(kevin);
-//    Assert.assertFalse(personList.contains(kevin));
-//    }
+    @Test
+    public void remove() {
+    Person von = new Person();
+    Person kevin = new Person();
+    ArrayList<Person> personList = new ArrayList(){ };
+    personList.add(von);
+    personList.add(kevin);
+    personList.remove(kevin);
+    Assert.assertFalse(personList.contains(kevin));
+    }
 
     @Test
     public void addTest() {

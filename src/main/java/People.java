@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class People<E> extends Person implements Iterable<E> {
+public class People<E extends Person> implements Iterable<E> {
    private ArrayList<Person> personList;
 
     public boolean contains(Person person) {

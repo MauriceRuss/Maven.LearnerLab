@@ -13,10 +13,12 @@ public class Record {
     }
 
     public String getArtist() {
+
         return artist;
     }
 
     public void setArtist(String artist) {
+
         this.artist = artist;
     }
 
@@ -41,6 +43,7 @@ public class Record {
     }
 
     public void setPlaying(boolean playing) {
+
         isPlaying = playing;
     }
 
