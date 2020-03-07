@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class People<E> extends Person implements Iterable<E> {
+public abstract class People<E> extends Person implements Iterable<E> {
    private List<Person> personList;
 
    public People (){

@@ -2,10 +2,7 @@ public final class Students extends People<Student> {
     private static  Students INSTANCE = new Students();
 
 
-
     private Students(){}
-    String[]init = {"raheel", "moe", "jimmy", "giles", "han", "von", "kevin", "chip", "emma", "greg"};
-    //for(Integer i = 0; i < init.length)
 
 
     public static Students getInstance(){
@@ -15,6 +12,11 @@ public final class Students extends People<Student> {
         return INSTANCE;
     }
 
+    
+    public Student[] toArray() {
+        Student[] students = Students.getInstance().toArray();
+        return students;
+    }
 
 
 }
